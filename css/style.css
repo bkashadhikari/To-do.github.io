@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e22865), to(#37adcd));
+  background-image: linear-gradient(to right, #e22865, #37adcd);
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+.container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px auto;
+}
+.container .nav h2 {
+  font-size: 2rem;
+}
+.container .nav .user-input {
+  width: 350px;
+  text-align: center;
+}
+.container .nav .user-input input {
+  width: 80%;
+  outline: none;
+  padding: 8px;
+  border: 1px solid lightgray;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.container .nav .user-input button {
+  cursor: pointer;
+  padding: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 1s;
+  transition: 1s;
+  outline: none;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.container .nav .user-input button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.container .to-do-items {
+  max-width: 500px;
+  margin: auto;
+}
+.container .item {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.container .item:hover {
+  -webkit-box-shadow: 0 0 20px #e22865;
+          box-shadow: 0 0 20px #e22865;
+  border: 1px solid #e22865;
+}
+.container .item .child1 {
+  color: green;
+}
+.container .item i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.user-input input:focus {
+  -webkit-box-shadow: 0 0 5px #e22865;
+          box-shadow: 0 0 5px #e22865;
+  border: 1px solid #e22865;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav h2 {
+    margin: 10px 0;
+  }
+  .nav .user-input {
+    width: 100%;
+  }
+  .to-do-items {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .user-input input {
+    width: 74%;
+  }
+}
+@media (max-width: 320px) {
+  .user-input input {
+    width: 60%;
+  }
+}/*# sourceMappingURL=style.css.map */
